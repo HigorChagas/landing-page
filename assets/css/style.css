@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/****************************************/
+/* 0 - Reset CSS
+/***************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/****************************************/
+/* 1 - Estilos gerais e variáveis 
+/***************************************/
+
+:root {
+    --ff-principal: 'Righteous', cursive;
+    --ff-secundaria: 'Sarala', sans-serif;
+
+    --primary-color: #FFF2E7;
+    --secondary-color: #ECD6C4;
+}
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    color: var(--primary-color);
+}
+
+/****************************************/
+/* 2 - Cabeçalho
+/***************************************/
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+.cabecalho__logo {
+    height: 72px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho__item {
+    font-family: var(--ff-principal);
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/****************************************/
+/* 3 - Conteúdo principal
+/***************************************/
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.3px solid var(--primary-color);
+}
+
+.conteudo__principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo__principal__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo__principal__titulo {
+    font-family: var(--ff-principal);
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--primary-color);
+}
+
+.conteudo__principal__subtitulo {
+    font-family: var(--ff-secundaria);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.conteudo__principal__btn {
+    background-color: var(--secondary-color);
+    width: 170px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-family: var(--ff-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #2F2325;
+}
+
+.conteudo__principal__btn:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    transition: 300ms;
+    color: var(--primary-color);
+}
+
+.conteudo__principal__btn:active {
+    content: "";
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(4px);
+}
+
+.conteudo__principal__img {
+    height: 430px;
+}
+
+/****************************************/
+/* 3 - Conteúdo secundário
+/***************************************/
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario__titulo {
+    border-top: 0.4px solid var(--primary-color);
+    padding-top: 48px;
+    font-family: var(--ff-principal);
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.conteudo-principal__texto {
+    font-family: var(--ff-secundaria);
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+/****************************************/
+/* 3 - Footer
+/***************************************/
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid var(--primary-color);
+}
+
+.rodape__img {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
